@@ -1,0 +1,2 @@
+document.querySelectorAll('.payment-option input').forEach(input=>input.addEventListener('change',()=>{document.querySelectorAll('.payment-option').forEach(el=>el.classList.remove('selected'));input.closest('.payment-option').classList.add('selected')}));
+function applyCoupon(){const value=document.getElementById('coupon').value.trim();const msg=document.getElementById('coupon-msg');msg.textContent=value?'این کد در نسخه نمایشی قابل اعتبارسنجی نیست.':'لطفاً کد تخفیف را وارد کنید.';msg.style.color=value?'#b45309':'#dc2626'}
